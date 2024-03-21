@@ -1,0 +1,32 @@
+<html>
+  <head>       
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Galleria</title>  
+			<script>
+				function sostituisci(val)
+				{
+					document.getElementById("cambia").innerHTML="<img src='pic"+val+".jpg'/>";
+				}
+			</script>
+	</head>
+	<body>	
+			<h2 align="center">Galleria</h2>
+			<table align="center" border="0">
+				<tr align="center">
+					<td><img height="60" src="pic1.jpg" border="1" onclick="sostituisci(1)"/></td>
+					<td><img height="60" src="pic2.jpg" border="1"onclick="sostituisci(2)"/></td>
+					<td><img height="60" src="pic3.jpg" border="1"onclick="sostituisci(3)"/></td>
+				</tr>
+				<tr align="center">
+					<td><img height="60" src="pic4.jpg" border="1" onclick="sostituisci(4)"/></td>
+					<td><img height="60" src="pic5.jpg" border="1" onclick="sostituisci(5)"/></td>
+					<td><img height="60" src="pic6.jpg" border="1" onclick="sostituisci(6)"/></td>
+				</tr>
+			</table>
+			<br/><br/><br/>
+			<p align="center" id="cambia">
+				<img src="pic1.jpg"/>
+			</p>
+					
+</body>
+</html>
